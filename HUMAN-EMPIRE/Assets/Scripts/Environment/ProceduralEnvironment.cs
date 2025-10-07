@@ -25,29 +25,29 @@ namespace WorldNavigator.Environment
         /// <summary>
         /// Add environment details to a land object
         /// </summary>
-        public void EnhanceLandWithEnvironment(GameObject landObject, WorldNavigator.Lands.LandData landData)
+        public void EnhanceLandWithEnvironment(GameObject landObject, WorldNavigator.Core.LandData landData)
         {
             switch (landData.category)
             {
-                case WorldNavigator.Lands.LandCategory.Temperate:
+                case WorldNavigator.Core.LandCategory.Temperate:
                     AddTemperateEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Water:
+                case WorldNavigator.Core.LandCategory.Water:
                     AddWaterEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Mountain:
+                case WorldNavigator.Core.LandCategory.Mountain:
                     AddMountainEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Cold:
+                case WorldNavigator.Core.LandCategory.Cold:
                     AddColdEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Arid:
+                case WorldNavigator.Core.LandCategory.Arid:
                     AddAridEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Volcanic:
+                case WorldNavigator.Core.LandCategory.Volcanic:
                     AddVolcanicEnvironment(landObject);
                     break;
-                case WorldNavigator.Lands.LandCategory.Special:
+                case WorldNavigator.Core.LandCategory.Special:
                     AddSpecialEnvironment(landObject);
                     break;
             }
