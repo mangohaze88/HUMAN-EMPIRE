@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using TMPro;
 using WorldNavigator.Core;
 using WorldNavigator.Lands;
+using WorldNavigator.Environment;
+using WorldNavigator.Player;
 
 namespace WorldNavigator.Visual
 {
@@ -25,10 +27,16 @@ namespace WorldNavigator.Visual
         [SerializeField] private ParticleSystem discoveryEffect;
         [SerializeField] private AudioSource ambientAudio;
         
+        [Header("Environment")]
+        [SerializeField] private bool addEnvironmentalDetails = true;
+        [SerializeField] private bool spawnPlayer = true;
+        
         // Generated objects
         private GameObject[] landObjects;
         private Material[] landMaterials;
         private bool isGenerating = false;
+        private ProceduralEnvironment environmentGenerator;
+        private SimplePlayerController player;
         
         private void Start()
         {
@@ -43,10 +51,23 @@ namespace WorldNavigator.Visual
             SetupCamera();
             SetupLighting();
             SetupUI();
+            SetupEnvironmentGenerator();
             
             if (generateOnStart)
             {
                 StartCoroutine(GenerateWorldAnimated());
+            }
+        }
+        
+        /// <summary>
+        /// Setup environment generator
+        /// </summary>
+        private void SetupEnvironmentGenerator()
+        {
+            if (addEnvironmentalDetails)
+            {
+                GameObject envObject = new GameObject("Environment Generator");
+                environmentGenerator = envObject.AddComponent<ProceduralEnvironment>();
             }
         }
         
@@ -212,8 +233,14 @@ namespace WorldNavigator.Visual
                 yield return new WaitForSeconds(0.05f); // Small delay between spawns
             }
             
+            // Spawn player after world is ready
+            if (spawnPlayer && player == null)
+            {
+                SpawnPlayer();
+            }
+            
             isGenerating = false;
-            Debug.Log($"Generated {landDatabase.allLands.Length} lands with visual effects!");
+            Debug.Log($"Generated {landDatabase.allLands.Length} lands with environmental details!");
         }
         
         /// <summary>
@@ -235,6 +262,12 @@ namespace WorldNavigator.Visual
             CreateLandLight(landObject, landData);
             CreateLandAudio(landObject, landData);
             CreateLandInteraction(landObject, landData);
+            
+            // Add environmental details
+            if (environmentGenerator != null && addEnvironmentalDetails)
+            {
+                environmentGenerator.EnhanceLandWithEnvironment(landObject, landData);
+            }
             
             return landObject;
         }
@@ -545,6 +578,20 @@ namespace WorldNavigator.Visual
         }
         
         /// <summary>
+        /// Spawn player character
+        /// </summary>
+        private void SpawnPlayer()
+        {
+            GameObject playerObject = new GameObject("🧙‍♂️ Player");
+            player = playerObject.AddComponent<SimplePlayerController>();
+            
+            // Position player at world center, slightly elevated
+            playerObject.transform.position = new Vector3(0, 5f, 0);
+            
+            Debug.Log("Player spawned at world center!");
+        }
+        
+        /// <summary>
         /// Public method to regenerate world
         /// </summary>
         [ContextMenu("Regenerate World")]
@@ -553,6 +600,12 @@ namespace WorldNavigator.Visual
             if (landContainer != null)
             {
                 DestroyImmediate(landContainer.gameObject);
+            }
+            
+            if (player != null)
+            {
+                DestroyImmediate(player.gameObject);
+                player = null;
             }
             
             StartCoroutine(GenerateWorldAnimated());
