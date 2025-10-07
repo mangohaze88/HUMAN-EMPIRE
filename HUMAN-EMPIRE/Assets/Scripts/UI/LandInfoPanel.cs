@@ -193,11 +193,11 @@ namespace WorldNavigator.UI
             else
             {
                 // Create simple text item
-                item = new GameObject(\"Characteristic\");
+                item = new GameObject("Characteristic");
                 item.transform.SetParent(container);
                 
                 TextMeshProUGUI textComponent = item.AddComponent<TextMeshProUGUI>();
-                textComponent.text = \"• \" + text;
+                textComponent.text = "• " + text;
                 textComponent.fontSize = 14f;
                 textComponent.color = Color.white;
             }
@@ -205,7 +205,7 @@ namespace WorldNavigator.UI
             // Set text if the item has a text component
             TextMeshProUGUI textComp = item.GetComponent<TextMeshProUGUI>();
             if (textComp != null)
-                textComp.text = \"• \" + text;
+                textComp.text = "• " + text;
         }
         
         /// <summary>
@@ -213,10 +213,10 @@ namespace WorldNavigator.UI
         /// </summary>
         private void CreateCharacteristicItemPrefab()
         {
-            GameObject prefab = new GameObject(\"CharacteristicItem\");
+            GameObject prefab = new GameObject("CharacteristicItem");
             
             TextMeshProUGUI text = prefab.AddComponent<TextMeshProUGUI>();
-            text.text = \"• Characteristic\";
+            text.text = "• Characteristic";
             text.fontSize = 14f;
             text.color = Color.white;
             

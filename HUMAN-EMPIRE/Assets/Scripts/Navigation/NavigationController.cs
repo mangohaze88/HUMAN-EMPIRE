@@ -79,7 +79,7 @@ namespace WorldNavigator.Navigation
             }
             
             // Handle zoom with mouse wheel
-            float scroll = Input.GetAxis(\"Mouse ScrollWheel\");
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (Mathf.Abs(scroll) > 0.01f)
             {
                 ZoomCamera(-scroll * zoomSpeed);
@@ -181,8 +181,8 @@ namespace WorldNavigator.Navigation
             }
             
             // Keyboard movement
-            float horizontal = Input.GetAxis(\"Horizontal\");
-            float vertical = Input.GetAxis(\"Vertical\");
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
             
             if (Mathf.Abs(horizontal) > 0.01f || Mathf.Abs(vertical) > 0.01f)
             {

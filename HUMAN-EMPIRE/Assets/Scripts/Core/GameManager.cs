@@ -153,7 +153,7 @@ namespace WorldNavigator.Core
             OnLandVisited?.Invoke(land);
             OnStatsUpdated?.Invoke(currentStats);
             
-            Debug.Log($\"Reached {land.Data.landName}!\");
+            Debug.Log($"Reached {land.Data.landName}!");
         }
         
         /// <summary>
@@ -176,7 +176,7 @@ namespace WorldNavigator.Core
                 otherLand.SetSelected(otherLand == land);
             }
             
-            Debug.Log($\"Selected {land.Data.landName}\");
+            Debug.Log($"Selected {land.Data.landName}");
         }
         
         /// <summary>
@@ -187,7 +187,7 @@ namespace WorldNavigator.Core
             if (land == null || !land.IsDiscovered) return;
             
             // Show brief tooltip or highlight
-            Debug.Log($\"Hovering over {land.Data.landName}\");
+            Debug.Log($"Hovering over {land.Data.landName}");
         }
         
         /// <summary>
@@ -256,7 +256,7 @@ namespace WorldNavigator.Core
         public void SaveProgress()
         {
             // TODO: Implement save system
-            Debug.Log(\"Game progress saved!\");
+            Debug.Log("Game progress saved!");
         }
         
         /// <summary>
@@ -265,7 +265,7 @@ namespace WorldNavigator.Core
         public void LoadProgress()
         {
             // TODO: Implement load system
-            Debug.Log(\"Game progress loaded!\");
+            Debug.Log("Game progress loaded!");
         }
     }
 }
