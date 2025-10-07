@@ -167,9 +167,13 @@ namespace WorldNavigator.Visual
             rect.anchorMax = new Vector2(0.5f, 1f);
             rect.anchoredPosition = new Vector2(0, -50);
             rect.sizeDelta = new Vector2(600, 80);
-            
-            // Add glow effect
-            title.fontMaterial = CreateGlowMaterial();
+
+            // Add glow effect if material is available
+            Material glowMaterial = CreateGlowMaterial();
+            if (glowMaterial != null)
+            {
+                title.fontMaterial = glowMaterial;
+            }
         }
         
         /// <summary>
@@ -573,7 +577,20 @@ namespace WorldNavigator.Visual
         /// </summary>
         private Material CreateGlowMaterial()
         {
-            Material glowMat = new Material(Shader.Find("TextMeshPro/Distance Field"));
+            // Try to find TextMeshPro shader, fallback to standard if not available
+            Shader shader = Shader.Find("TextMeshPro/Distance Field");
+            if (shader == null)
+            {
+                shader = Shader.Find("UI/Default");
+            }
+
+            if (shader == null)
+            {
+                Debug.LogWarning("Could not find TextMeshPro or UI shader, title may not have glow effect");
+                return null;
+            }
+
+            Material glowMat = new Material(shader);
             glowMat.SetFloat("_GlowPower", 0.3f);
             glowMat.SetColor("_GlowColor", Color.cyan);
             return glowMat;
