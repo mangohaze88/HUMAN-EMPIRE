@@ -240,10 +240,10 @@ namespace WorldNavigator.Core
             trunk.transform.localScale = new Vector3(0.2f, 0.8f, 0.2f);
             trunk.GetComponent<Renderer>().material.color = new Color(0.3f, 0.2f, 0.1f);
 
-            // Snow leaves
-            GameObject leaves = GameObject.CreatePrimitive(PrimitiveType.Cone);
+            // Snow leaves (using cylinder as pine tree shape)
+            GameObject leaves = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             leaves.transform.SetParent(tree.transform);
-            leaves.transform.localScale = Vector3.one * 1.5f;
+            leaves.transform.localScale = new Vector3(1f, 1.2f, 1f);
             leaves.transform.localPosition = Vector3.up * 1.2f;
             leaves.GetComponent<Renderer>().material.color = new Color(0.9f, 0.95f, 1f);
         }
