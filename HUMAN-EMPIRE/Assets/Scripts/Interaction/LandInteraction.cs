@@ -1,5 +1,7 @@
 using UnityEngine;
 using WorldNavigator.Lands;
+using WorldNavigator.Core;
+using WorldNavigator.Effects;
 
 namespace WorldNavigator.Interaction
 {

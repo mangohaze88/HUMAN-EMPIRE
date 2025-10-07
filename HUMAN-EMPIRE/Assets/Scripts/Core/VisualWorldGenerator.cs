@@ -5,6 +5,8 @@ using WorldNavigator.Core;
 using WorldNavigator.Lands;
 using WorldNavigator.Environment;
 using WorldNavigator.Player;
+using WorldNavigator.Animation;
+using WorldNavigator.Interaction;
 
 namespace WorldNavigator.Visual
 {

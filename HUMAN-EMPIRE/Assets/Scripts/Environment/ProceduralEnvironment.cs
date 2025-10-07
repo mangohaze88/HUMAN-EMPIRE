@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using WorldNavigator.Animation;
 
 namespace WorldNavigator.Environment
 {
@@ -255,7 +256,7 @@ namespace WorldNavigator.Environment
             {
                 case TreeType.Pine:
                 case TreeType.SnowyPine:
-                    foliage = GameObject.CreatePrimitive(PrimitiveType.Cone);
+                    foliage = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
                     foliage.transform.localScale = new Vector3(1.5f, 1.2f, 1.5f);
                     foliageMaterial.color = type == TreeType.SnowyPine ? 
                         new Color(0.1f, 0.3f, 0.1f, 1f) : // Dark green for snowy

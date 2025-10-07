@@ -234,5 +234,13 @@ namespace WorldNavigator.Lands
         {
             return GetDistanceTo(otherLand) <= maxDistance;
         }
+        
+        /// <summary>
+        /// Public method to trigger click event
+        /// </summary>
+        public void OnClick()
+        {
+            OnLandClicked?.Invoke(this);
+        }
     }
 }
