@@ -45,7 +45,7 @@ namespace WorldNavigator.Navigation
                 playerCamera = Camera.main;
                 
             if (playerCamera == null)
-                playerCamera = FindObjectOfType<Camera>();
+                playerCamera = FindFirstObjectByType<Camera>();
         }
         
         private void Update()
@@ -220,7 +220,7 @@ namespace WorldNavigator.Navigation
             if (currentLand == null) return;
             
             // Find all lands within discovery range
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             
             foreach (LandType land in allLands)
             {
@@ -261,7 +261,7 @@ namespace WorldNavigator.Navigation
         /// </summary>
         public LandType[] GetDiscoveredLands()
         {
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             System.Collections.Generic.List<LandType> discoveredLands = 
                 new System.Collections.Generic.List<LandType>();
             

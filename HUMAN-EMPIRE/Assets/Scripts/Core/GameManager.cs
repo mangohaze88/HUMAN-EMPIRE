@@ -40,10 +40,10 @@ namespace WorldNavigator.Core
         {
             // Find components if not assigned
             if (navigationController == null)
-                navigationController = FindObjectOfType<NavigationController>();
+                navigationController = FindFirstObjectByType<NavigationController>();
                 
             if (landInfoPanel == null)
-                landInfoPanel = FindObjectOfType<LandInfoPanel>();
+                landInfoPanel = FindFirstObjectByType<LandInfoPanel>();
         }
         
         private void Start()
@@ -77,7 +77,7 @@ namespace WorldNavigator.Core
             }
             
             // Land interaction events
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             foreach (LandType land in allLands)
             {
                 land.OnLandClicked += OnLandClicked;
@@ -113,7 +113,7 @@ namespace WorldNavigator.Core
             if (startWithRandomLand)
             {
                 // Find a suitable starting land
-                LandType[] allLands = FindObjectsOfType<LandType>();
+                LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
                 LandType[] suitableStarts = System.Array.FindAll(allLands, 
                     land => land.Data.rarity <= 2); // Easy/common lands only
                 
@@ -130,7 +130,7 @@ namespace WorldNavigator.Core
             // Fallback to first land found
             if (startLand == null)
             {
-                LandType[] allLands = FindObjectsOfType<LandType>();
+                LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
                 if (allLands.Length > 0)
                     startLand = allLands[0];
             }
@@ -170,7 +170,7 @@ namespace WorldNavigator.Core
             }
             
             // Deselect other lands
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             foreach (LandType otherLand in allLands)
             {
                 otherLand.SetSelected(otherLand == land);
@@ -209,7 +209,7 @@ namespace WorldNavigator.Core
         /// </summary>
         private void UpdateDiscoveryStats()
         {
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             int discoveredCount = 0;
             System.Collections.Generic.List<string> discoveredNames = 
                 new System.Collections.Generic.List<string>();
@@ -234,7 +234,7 @@ namespace WorldNavigator.Core
         /// </summary>
         public LandType[] GetLandsByCategory(LandCategory category)
         {
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             return System.Array.FindAll(allLands, land => land.Data.category == category);
         }
         
@@ -246,7 +246,7 @@ namespace WorldNavigator.Core
             if (navigationController != null)
                 return navigationController.GetDiscoveredLands();
                 
-            LandType[] allLands = FindObjectsOfType<LandType>();
+            LandType[] allLands = FindObjectsByType<LandType>(FindObjectsSortMode.None);
             return System.Array.FindAll(allLands, land => land.IsDiscovered);
         }
         

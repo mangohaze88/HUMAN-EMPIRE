@@ -76,9 +76,9 @@ namespace WorldNavigator.UI
         /// </summary>
         private void InitializeReferences()
         {
-            gameManager = FindObjectOfType<GameManager>();
-            navigationController = FindObjectOfType<NavigationController>();
-            worldManager = FindObjectOfType<WorldManager>();
+            gameManager = FindFirstObjectByType<GameManager>();
+            navigationController = FindFirstObjectByType<NavigationController>();
+            worldManager = FindFirstObjectByType<WorldManager>();
             
             if (landInfoPanel != null)
             {

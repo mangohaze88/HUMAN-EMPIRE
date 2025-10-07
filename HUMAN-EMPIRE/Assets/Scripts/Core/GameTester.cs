@@ -63,11 +63,11 @@ namespace WorldNavigator.Core
         /// </summary>
         private void InitializeReferences()
         {
-            gameManager = FindObjectOfType<GameManager>();
-            navigationController = FindObjectOfType<NavigationController>();
-            worldManager = FindObjectOfType<WorldManager>();
-            uiController = FindObjectOfType<MainUIController>();
-            landDatabase = FindObjectOfType<LandDatabase>();
+            gameManager = FindFirstObjectByType<GameManager>();
+            navigationController = FindFirstObjectByType<NavigationController>();
+            worldManager = FindFirstObjectByType<WorldManager>();
+            uiController = FindFirstObjectByType<MainUIController>();
+            landDatabase = FindFirstObjectByType<LandDatabase>();
             
             if (worldManager != null)
             {

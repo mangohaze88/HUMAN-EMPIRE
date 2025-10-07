@@ -129,7 +129,7 @@ namespace WorldNavigator.Core
         private void SetupUI()
         {
             // Create event system if not exists
-            EventSystem eventSystem = FindObjectOfType<EventSystem>();
+            EventSystem eventSystem = FindFirstObjectByType<EventSystem>();
             if (eventSystem == null)
             {
                 GameObject eventSystemObject = new GameObject("EventSystem");
@@ -220,7 +220,7 @@ namespace WorldNavigator.Core
             
             // Make description scrollable
             TextMeshProUGUI descTextComp = descText.GetComponent<TextMeshProUGUI>();
-            descTextComp.enableWordWrapping = true;
+            descTextComp.textWrappingMode = TMPro.TextWrappingModes.Normal;
             
             // Characteristics header
             CreateUIText("Characteristics Header", panel.transform,

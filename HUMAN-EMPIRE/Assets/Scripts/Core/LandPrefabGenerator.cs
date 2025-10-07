@@ -325,7 +325,7 @@ namespace WorldNavigator.Core
                     break;
             }
             
-            shape.shape = ParticleSystemShapeType.Box;
+            shape.shapeType = ParticleSystemShapeType.Box;
             shape.scale = Vector3.one * landSize * 0.8f;
         }
         
