@@ -1,0 +1,83 @@
+{
+  "concepts": {
+    "add_identity": {
+      "name": "add_identity",
+      "domain": "add",
+      "description": "Identity element exists: a OP 0 = a",
+      "formula": "identity=0",
+      "confidence": 1.0,
+      "evidence": 9
+    },
+    "add_closure": {
+      "name": "add_closure",
+      "domain": "add",
+      "description": "Operation is closed: results bounded by input range",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 50
+    },
+    "add_formula": {
+      "name": "add_formula",
+      "domain": "add",
+      "description": "Discovered formula: result = a + b",
+      "formula": "a + b",
+      "confidence": 1.0,
+      "evidence": 50
+    },
+    "add_commutativity": {
+      "name": "add_commutativity",
+      "domain": "add",
+      "description": "Operation is commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 17
+    },
+    "sub_identity": {
+      "name": "sub_identity",
+      "domain": "sub",
+      "description": "Identity element exists: a OP 0 = a",
+      "formula": "identity=0",
+      "confidence": 0.8571428571428571,
+      "evidence": 6
+    },
+    "mul_identity": {
+      "name": "mul_identity",
+      "domain": "mul",
+      "description": "Identity element exists: a OP 1 = a",
+      "formula": "identity=1",
+      "confidence": 0.5833333333333334,
+      "evidence": 7
+    },
+    "mul_closure": {
+      "name": "mul_closure",
+      "domain": "mul",
+      "description": "Operation is closed: results bounded by input range",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 50
+    },
+    "mul_formula": {
+      "name": "mul_formula",
+      "domain": "mul",
+      "description": "Discovered formula: result = a * b",
+      "formula": "a * b",
+      "confidence": 1.0,
+      "evidence": 50
+    },
+    "mul_commutativity": {
+      "name": "mul_commutativity",
+      "domain": "mul",
+      "description": "Operation is commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 18
+    }
+  },
+  "domain_mastery": {
+    "add": 0.754375,
+    "sub": 0.7,
+    "mul": 0.754375
+  },
+  "total_experiences": 5000,
+  "completed_goals": []
+}

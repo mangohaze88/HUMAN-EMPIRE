@@ -1,0 +1,477 @@
+{
+  "total_steps": 5000,
+  "mastery": {
+    "add": 0.526,
+    "sub": 0.46299999999999997,
+    "mul": 0.702,
+    "div": 0.573,
+    "mod": 0.605,
+    "pow": 0.49,
+    "and": 0.651,
+    "or": 0.536,
+    "xor": 0.5760000000000001,
+    "shl": 0.527,
+    "shr": 0.483,
+    "lt": 0.515,
+    "le": 0.48,
+    "gt": 0.503,
+    "ge": 0.192,
+    "eq": 0.534,
+    "ne": 0.6579999999999999,
+    "max": 0.511,
+    "min": 0.652,
+    "avg": 0.541,
+    "gcd": 0.469
+  },
+  "concepts": {
+    "lt_formula": {
+      "name": "lt_formula",
+      "domain": "lt",
+      "description": "Formula: result = a < b",
+      "formula": "a < b",
+      "confidence": 1.0,
+      "evidence": 24
+    },
+    "ge_formula": {
+      "name": "ge_formula",
+      "domain": "ge",
+      "description": "Formula: result = a > b",
+      "formula": "a > b",
+      "confidence": 1.0,
+      "evidence": 25
+    },
+    "eq_formula": {
+      "name": "eq_formula",
+      "domain": "eq",
+      "description": "Formula: result = a == b",
+      "formula": "a == b",
+      "confidence": 1.0,
+      "evidence": 22
+    },
+    "max_formula": {
+      "name": "max_formula",
+      "domain": "max",
+      "description": "Formula: result = max(a,b)",
+      "formula": "max(a,b)",
+      "confidence": 1.0,
+      "evidence": 31
+    },
+    "max_identity": {
+      "name": "max_identity",
+      "domain": "max",
+      "description": "Identity element: 2",
+      "formula": "identity=2",
+      "confidence": 0.9,
+      "evidence": 5
+    },
+    "avg_formula": {
+      "name": "avg_formula",
+      "domain": "avg",
+      "description": "Formula: result = (a+b)//2",
+      "formula": "(a+b)//2",
+      "confidence": 1.0,
+      "evidence": 32
+    },
+    "and_formula": {
+      "name": "and_formula",
+      "domain": "and",
+      "description": "Formula: result = a & b",
+      "formula": "a & b",
+      "confidence": 1.0,
+      "evidence": 36
+    },
+    "and_commutative": {
+      "name": "and_commutative",
+      "domain": "and",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 5
+    },
+    "and_identity": {
+      "name": "and_identity",
+      "domain": "and",
+      "description": "Identity element: 15",
+      "formula": "identity=15",
+      "confidence": 0.9,
+      "evidence": 11
+    },
+    "add_formula": {
+      "name": "add_formula",
+      "domain": "add",
+      "description": "Formula: result = a + b",
+      "formula": "a + b",
+      "confidence": 1.0,
+      "evidence": 38
+    },
+    "add_commutative": {
+      "name": "add_commutative",
+      "domain": "add",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 7
+    },
+    "min_formula": {
+      "name": "min_formula",
+      "domain": "min",
+      "description": "Formula: result = min(a,b)",
+      "formula": "min(a,b)",
+      "confidence": 1.0,
+      "evidence": 50
+    },
+    "min_identity": {
+      "name": "min_identity",
+      "domain": "min",
+      "description": "Identity element: 14",
+      "formula": "identity=14",
+      "confidence": 0.9,
+      "evidence": 8
+    },
+    "min_zero": {
+      "name": "min_zero",
+      "domain": "min",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 10
+    },
+    "le_formula": {
+      "name": "le_formula",
+      "domain": "le",
+      "description": "Formula: result = a <= b",
+      "formula": "a <= b",
+      "confidence": 1.0,
+      "evidence": 41
+    },
+    "gt_formula": {
+      "name": "gt_formula",
+      "domain": "gt",
+      "description": "Formula: result = a > b",
+      "formula": "a > b",
+      "confidence": 1.0,
+      "evidence": 59
+    },
+    "min_commutative": {
+      "name": "min_commutative",
+      "domain": "min",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 9
+    },
+    "or_formula": {
+      "name": "or_formula",
+      "domain": "or",
+      "description": "Formula: result = a | b",
+      "formula": "a | b",
+      "confidence": 1.0,
+      "evidence": 41
+    },
+    "or_commutative": {
+      "name": "or_commutative",
+      "domain": "or",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 6
+    },
+    "or_identity": {
+      "name": "or_identity",
+      "domain": "or",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 6
+    },
+    "gcd_commutative": {
+      "name": "gcd_commutative",
+      "domain": "gcd",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 10
+    },
+    "gcd_identity": {
+      "name": "gcd_identity",
+      "domain": "gcd",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 6
+    },
+    "mul_formula": {
+      "name": "mul_formula",
+      "domain": "mul",
+      "description": "Formula: result = a * b",
+      "formula": "a * b",
+      "confidence": 1.0,
+      "evidence": 68
+    },
+    "mul_commutative": {
+      "name": "mul_commutative",
+      "domain": "mul",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 13
+    },
+    "mul_identity": {
+      "name": "mul_identity",
+      "domain": "mul",
+      "description": "Identity element: 1",
+      "formula": "identity=1",
+      "confidence": 0.9,
+      "evidence": 14
+    },
+    "xor_formula": {
+      "name": "xor_formula",
+      "domain": "xor",
+      "description": "Formula: result = a ^ b",
+      "formula": "a ^ b",
+      "confidence": 1.0,
+      "evidence": 79
+    },
+    "xor_commutative": {
+      "name": "xor_commutative",
+      "domain": "xor",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 13
+    },
+    "xor_identity": {
+      "name": "xor_identity",
+      "domain": "xor",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 13
+    },
+    "eq_commutative": {
+      "name": "eq_commutative",
+      "domain": "eq",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 13
+    },
+    "sub_formula": {
+      "name": "sub_formula",
+      "domain": "sub",
+      "description": "Formula: result = a - b",
+      "formula": "a - b",
+      "confidence": 1.0,
+      "evidence": 111
+    },
+    "sub_identity": {
+      "name": "sub_identity",
+      "domain": "sub",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 10
+    },
+    "div_formula": {
+      "name": "div_formula",
+      "domain": "div",
+      "description": "Formula: result = a // b",
+      "formula": "a // b",
+      "confidence": 1.0,
+      "evidence": 84
+    },
+    "div_identity": {
+      "name": "div_identity",
+      "domain": "div",
+      "description": "Identity element: 1",
+      "formula": "identity=1",
+      "confidence": 0.9,
+      "evidence": 9
+    },
+    "div_zero": {
+      "name": "div_zero",
+      "domain": "div",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 14
+    },
+    "shl_identity": {
+      "name": "shl_identity",
+      "domain": "shl",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 6
+    },
+    "avg_commutative": {
+      "name": "avg_commutative",
+      "domain": "avg",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 31
+    },
+    "avg_identity": {
+      "name": "avg_identity",
+      "domain": "avg",
+      "description": "Identity element: 6",
+      "formula": "identity=6",
+      "confidence": 0.9,
+      "evidence": 5
+    },
+    "max_commutative": {
+      "name": "max_commutative",
+      "domain": "max",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 27
+    },
+    "pow_identity": {
+      "name": "pow_identity",
+      "domain": "pow",
+      "description": "Identity element: 1",
+      "formula": "identity=1",
+      "confidence": 0.9,
+      "evidence": 6
+    },
+    "shr_identity": {
+      "name": "shr_identity",
+      "domain": "shr",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 5
+    },
+    "and_zero": {
+      "name": "and_zero",
+      "domain": "and",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 13
+    },
+    "add_identity": {
+      "name": "add_identity",
+      "domain": "add",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 19
+    },
+    "mod_formula": {
+      "name": "mod_formula",
+      "domain": "mod",
+      "description": "Formula: result = a % b",
+      "formula": "a % b",
+      "confidence": 1.0,
+      "evidence": 177
+    },
+    "mod_identity": {
+      "name": "mod_identity",
+      "domain": "mod",
+      "description": "Identity element: 15",
+      "formula": "identity=15",
+      "confidence": 0.9,
+      "evidence": 12
+    },
+    "mod_zero": {
+      "name": "mod_zero",
+      "domain": "mod",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 22
+    },
+    "shr_zero": {
+      "name": "shr_zero",
+      "domain": "shr",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 11
+    },
+    "eq_zero": {
+      "name": "eq_zero",
+      "domain": "eq",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 19
+    },
+    "ne_formula": {
+      "name": "ne_formula",
+      "domain": "ne",
+      "description": "Formula: result = a != b",
+      "formula": "a != b",
+      "confidence": 1.0,
+      "evidence": 227
+    },
+    "ne_commutative": {
+      "name": "ne_commutative",
+      "domain": "ne",
+      "description": "Commutative: a OP b = b OP a",
+      "formula": null,
+      "confidence": 1.0,
+      "evidence": 68
+    },
+    "lt_zero": {
+      "name": "lt_zero",
+      "domain": "lt",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 15
+    },
+    "pow_zero": {
+      "name": "pow_zero",
+      "domain": "pow",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 20
+    },
+    "mul_zero": {
+      "name": "mul_zero",
+      "domain": "mul",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 18
+    },
+    "gt_zero": {
+      "name": "gt_zero",
+      "domain": "gt",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 10
+    },
+    "le_zero": {
+      "name": "le_zero",
+      "domain": "le",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 12
+    },
+    "ne_identity": {
+      "name": "ne_identity",
+      "domain": "ne",
+      "description": "Identity element: 0",
+      "formula": "identity=0",
+      "confidence": 0.9,
+      "evidence": 6
+    },
+    "shl_zero": {
+      "name": "shl_zero",
+      "domain": "shl",
+      "description": "Zero property: a OP 0 = 0",
+      "formula": null,
+      "confidence": 0.9,
+      "evidence": 17
+    }
+  },
+  "saved_at": 1770383262.391593
+}

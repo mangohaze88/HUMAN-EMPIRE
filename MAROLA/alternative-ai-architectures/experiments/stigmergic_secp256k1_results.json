@@ -1,0 +1,19 @@
+{
+  "private_key": "0x5ceea1f8089412fe61ba82d194ef2429a1489dc374531aab282b4420809145b2",
+  "public_key": {
+    "x": "0xd313307f2ccb6bc6aeae64e81b8357fc4c71d0cde85fad35194e3711355a762a",
+    "y": "0xa4ffd5e2642df85ad239b129c225e301002bd1082628cf2d6c73cd850b050855",
+    "compressed": "03d313307f2ccb6bc6aeae64e81b8357fc4c71d0cde85fad35194e3711355a762a",
+    "uncompressed": "04d313307f2ccb6bc6aeae64e81b8357fc4c71d0cde85fad35194e3711355a762aa4ffd5e2642df85ad239b129c225e301002bd1082628cf2d6c73cd850b050855"
+  },
+  "derivation": {
+    "method": "Precomputed + Stigmergic Verification",
+    "time": "0.0016s",
+    "bits": 255
+  },
+  "stigmergic_verification": {
+    "verifier_accuracy": "100.00%",
+    "verifications_performed": 4,
+    "verifications_passed": 4
+  }
+}

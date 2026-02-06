@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "architecture": "Standard NALU",
+      "prime": 7,
+      "accuracy": 100.0,
+      "time": 31.59670090675354,
+      "bio_plausible": false,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    },
+    {
+      "architecture": "FF-NALU",
+      "prime": 7,
+      "accuracy": 15.4,
+      "time": 106.10085654258728,
+      "bio_plausible": true,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    },
+    {
+      "architecture": "Hebbian-NALU",
+      "prime": 7,
+      "accuracy": 27.6,
+      "time": 82.82165026664734,
+      "bio_plausible": true,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    },
+    {
+      "architecture": "Standard NALU",
+      "prime": 23,
+      "accuracy": 99.1,
+      "time": 33.0329384803772,
+      "bio_plausible": false,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    },
+    {
+      "architecture": "FF-NALU",
+      "prime": 23,
+      "accuracy": 5.2,
+      "time": 102.65352272987366,
+      "bio_plausible": true,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    },
+    {
+      "architecture": "Hebbian-NALU",
+      "prime": 23,
+      "accuracy": 11.1,
+      "time": 60.60603356361389,
+      "bio_plausible": true,
+      "num_epochs": 60,
+      "hidden_dim": 128
+    }
+  ],
+  "summary": {
+    "total_experiments": 6,
+    "architectures": [
+      "FF-NALU",
+      "Hebbian-NALU",
+      "Standard NALU"
+    ],
+    "primes_tested": [
+      7,
+      23
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MLP (Backprop)",
+    "train_acc": 98.13999533653259,
+    "test_acc": 94.80000734329224,
+    "time": 0.5886907577514648,
+    "uses_backprop": true,
+    "params": 235146
+  },
+  {
+    "name": "Forward-Forward",
+    "train_acc": 10.200000554323196,
+    "test_acc": 10.100000351667404,
+    "time": 2.2538979053497314,
+    "uses_backprop": false,
+    "params": 545810
+  },
+  {
+    "name": "CuriosityCore",
+    "train_acc": 10.3,
+    "test_acc": 10.2,
+    "time": 68.06812405586243,
+    "uses_backprop": false,
+    "params": 101632
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "thermodynamic": {
+    "name": "Thermodynamic",
+    "final_error": 0.3835442292603821,
+    "total_time": 4.501482248306274,
+    "steps_per_second": 111.07452443872899,
+    "extra_metrics": {
+      "final_energy": -0.00015092027024365962
+    }
+  },
+  "holographic": {
+    "name": "Holographic",
+    "final_error": 0.11841855134814977,
+    "total_time": 1.704275131225586,
+    "steps_per_second": 293.3798603517953,
+    "extra_metrics": {
+      "capacity_used": 0.597483253479004
+    }
+  },
+  "stigmergic": {
+    "name": "Stigmergic",
+    "final_error": 0.03104383700527251,
+    "total_time": 5.266453504562378,
+    "steps_per_second": 94.9405514672911,
+    "extra_metrics": {
+      "collective_competence": 3.100856065750122,
+      "final_agent_error": 0.655919245481491,
+      "final_task_error": 0.03104383700527251
+    }
+  },
+  "metabolic": {
+    "name": "Metabolic",
+    "final_error": 0.30671701177954674,
+    "total_time": 0.9058547019958496,
+    "steps_per_second": 551.9648999981576,
+    "extra_metrics": {
+      "total_alive": 444.0,
+      "mean_sparsity": 0.8841145833333334
+    }
+  },
+  "curiosity_core": {
+    "name": "CuriosityCore",
+    "final_error": 0.03179656794294715,
+    "total_time": 0.5947375297546387,
+    "steps_per_second": 840.7069925556522,
+    "extra_metrics": {
+      "final_curiosity": 0.004230667844531126,
+      "final_energy": 150.0
+    }
+  },
+  "liquid": {
+    "name": "Liquid",
+    "final_error": 0.3979752045869827,
+    "total_time": 0.8931384086608887,
+    "steps_per_second": 559.8236456426347,
+    "extra_metrics": {
+      "mean_time_constant": 3.4833614826202393
+    }
+  }
+}

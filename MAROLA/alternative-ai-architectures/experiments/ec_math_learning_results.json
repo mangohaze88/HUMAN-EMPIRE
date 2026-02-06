@@ -1,0 +1,314 @@
+{
+  "mod_add_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.117,
+      "mae": 0.05009070411324501,
+      "close_accuracy": 0.338,
+      "rmse": 0.0909283384680748,
+      "train_time": 3.2604777812957764,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.202,
+      "mae": 0.038300998508930206,
+      "close_accuracy": 0.529,
+      "rmse": 0.139884814620018,
+      "train_time": 7.003570795059204,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.01,
+      "mae": 0.3929714327472701,
+      "close_accuracy": 0.031,
+      "rmse": 0.47432937135854,
+      "train_time": 7.117203712463379,
+      "backprop": false
+    }
+  },
+  "mod_sub_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.106,
+      "mae": 0.039953552186489105,
+      "close_accuracy": 0.311,
+      "rmse": 0.08240057528018951,
+      "train_time": 3.104914665222168,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.155,
+      "mae": 0.027915963903069496,
+      "close_accuracy": 0.473,
+      "rmse": 0.06764746457338333,
+      "train_time": 7.073548078536987,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.005,
+      "mae": 0.6474910051831683,
+      "close_accuracy": 0.025,
+      "rmse": 0.709988376549585,
+      "train_time": 7.031833171844482,
+      "backprop": false
+    }
+  },
+  "mod_mult_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.016,
+      "mae": 0.23863284289836884,
+      "close_accuracy": 0.036,
+      "rmse": 0.2816374599933624,
+      "train_time": 3.2700345516204834,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.008,
+      "mae": 0.24074053764343262,
+      "close_accuracy": 0.028,
+      "rmse": 0.2823256850242615,
+      "train_time": 7.08736515045166,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.014,
+      "mae": 0.3346313357685823,
+      "close_accuracy": 0.036,
+      "rmse": 0.4103712991215999,
+      "train_time": 7.040266513824463,
+      "backprop": false
+    }
+  },
+  "mod_add_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.011,
+      "mae": 0.05554889515042305,
+      "close_accuracy": 0.152,
+      "rmse": 0.0995817631483078,
+      "train_time": 3.1899988651275635,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.014,
+      "mae": 0.03495147079229355,
+      "close_accuracy": 0.247,
+      "rmse": 0.07365977764129639,
+      "train_time": 7.3007588386535645,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.3796187037255383,
+      "close_accuracy": 0.015,
+      "rmse": 0.45805329033872944,
+      "train_time": 7.025155067443848,
+      "backprop": false
+    }
+  },
+  "mod_sub_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.01,
+      "mae": 0.03654472529888153,
+      "close_accuracy": 0.198,
+      "rmse": 0.07446099817752838,
+      "train_time": 3.2256791591644287,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.048,
+      "mae": 0.014323919080197811,
+      "close_accuracy": 0.679,
+      "rmse": 0.048505332320928574,
+      "train_time": 7.187587261199951,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.002,
+      "mae": 0.33582427322704733,
+      "close_accuracy": 0.025,
+      "rmse": 0.41476275672736873,
+      "train_time": 7.063470125198364,
+      "backprop": false
+    }
+  },
+  "mod_mult_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.24312962591648102,
+      "close_accuracy": 0.027,
+      "rmse": 0.28512468934059143,
+      "train_time": 3.2532763481140137,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.003,
+      "mae": 0.24320916831493378,
+      "close_accuracy": 0.023,
+      "rmse": 0.2841239869594574,
+      "train_time": 7.101500749588013,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.001,
+      "mae": 0.4925411660327087,
+      "close_accuracy": 0.017,
+      "rmse": 0.5679132247250352,
+      "train_time": 7.107417345046997,
+      "backprop": false
+    }
+  },
+  "mod_inverse_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.032,
+      "mae": 0.21108563244342804,
+      "close_accuracy": 0.053,
+      "rmse": 0.2551645338535309,
+      "train_time": 4.725342512130737,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.028,
+      "mae": 0.2456551194190979,
+      "close_accuracy": 0.052,
+      "rmse": 0.2839643359184265,
+      "train_time": 10.604043960571289,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.01,
+      "mae": 0.3245027368860469,
+      "close_accuracy": 0.03,
+      "rmse": 0.3967125985270094,
+      "train_time": 10.437859058380127,
+      "backprop": false
+    }
+  },
+  "mod_exp_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.025,
+      "mae": 0.22532488405704498,
+      "close_accuracy": 0.067,
+      "rmse": 0.2736278772354126,
+      "train_time": 4.811618804931641,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.031,
+      "mae": 0.2333744466304779,
+      "close_accuracy": 0.088,
+      "rmse": 0.28108423948287964,
+      "train_time": 10.701210975646973,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.005,
+      "mae": 0.3333202112260144,
+      "close_accuracy": 0.055,
+      "rmse": 0.4099236307520279,
+      "train_time": 10.599929809570312,
+      "backprop": false
+    }
+  },
+  "mod_inverse_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.2535367012023926,
+      "close_accuracy": 0.012,
+      "rmse": 0.29168590903282166,
+      "train_time": 4.760910987854004,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.002,
+      "mae": 0.2505532205104828,
+      "close_accuracy": 0.011,
+      "rmse": 0.2877092957496643,
+      "train_time": 10.638727188110352,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.001,
+      "mae": 0.47762431719425713,
+      "close_accuracy": 0.012,
+      "rmse": 0.5575804289720979,
+      "train_time": 10.461766004562378,
+      "backprop": false
+    }
+  },
+  "mod_exp_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.002,
+      "mae": 0.24350744485855103,
+      "close_accuracy": 0.026,
+      "rmse": 0.290388286113739,
+      "train_time": 4.706042528152466,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.001,
+      "mae": 0.2598729133605957,
+      "close_accuracy": 0.022,
+      "rmse": 0.3003581464290619,
+      "train_time": 10.693252325057983,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.3150825107124998,
+      "close_accuracy": 0.014,
+      "rmse": 0.3874825916166592,
+      "train_time": 10.625316619873047,
+      "backprop": false
+    }
+  },
+  "point_validation_p97": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.016,
+      "mae": 0.25420162081718445,
+      "close_accuracy": 0.034,
+      "rmse": 0.33099979162216187,
+      "train_time": 3.139073610305786,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.004,
+      "mae": 0.29077422618865967,
+      "close_accuracy": 0.014,
+      "rmse": 0.3687925338745117,
+      "train_time": 7.061023712158203,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.5360898198452352,
+      "close_accuracy": 0.0,
+      "rmse": 0.6708612725127496,
+      "train_time": 7.093440532684326,
+      "backprop": false
+    }
+  },
+  "point_validation_p997": {
+    "MLP (Backprop)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.3588751554489136,
+      "close_accuracy": 0.004,
+      "rmse": 0.42662784457206726,
+      "train_time": 3.0800602436065674,
+      "backprop": true
+    },
+    "Liquid Network": {
+      "exact_accuracy": 0.0,
+      "mae": 0.3802631199359894,
+      "close_accuracy": 0.0,
+      "rmse": 0.4299611747264862,
+      "train_time": 6.968748569488525,
+      "backprop": true
+    },
+    "Bio-Plausible (Hebbian)": {
+      "exact_accuracy": 0.0,
+      "mae": 0.741888051794693,
+      "close_accuracy": 0.0,
+      "rmse": 0.8456273025801233,
+      "train_time": 7.079941511154175,
+      "backprop": false
+    }
+  }
+}
